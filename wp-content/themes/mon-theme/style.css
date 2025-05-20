@@ -1,0 +1,232 @@
+/*
+Theme Name:   Mon theme WordPress
+Text Domain:   mon-theme
+Theme URI:   
+Description: Mon th me WordPress
+Author:     Hernan Menajovsky
+Author URI: 
+Version:     1.0.0
+*/
+/* =====================
+   VARIABLES GLOBALES
+   ===================== */
+   :root {
+    --primary-color: #198ab3; /* Bleu ciel qui se combine bien avec le vert doux #17a2b8; */
+    --secondary-color: #17a2b8; /* Vert doux */
+    --header-bg: #e5ebee; 
+    --text-color: #333;
+    --button-hover: #138496; 
+    --font-size: 1rem;
+   }
+
+
+.btn-secondary {
+    color: #fff;
+    background-color: #6c757d;
+    border-color: #6c757d;
+}
+
+.btn-info:hover {
+    background-color: #138496;
+}
+
+.btn-info {
+    color: #fff;
+    background-color: #17a2b8;
+    border-color: #17a2b8;
+}
+
+
+
+/* =====================
+   STYLES GÉNÉRAUX
+   ===================== */
+body {
+    font-family: 'Arial', sans-serif;
+    font-size: 0.9rem;
+    background-color: var(--header-bg) !important ; /* Softer background color for harmony */
+    background-image: url(//wp-content/themes/mon-theme/ea29bb39-223f-4c49-9362-b7caf75313af.avif);
+    background-size: repeat-x !important;
+    color: #333; /* Ensures text is readable on the softer background */
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.3s ease; /* Smooth transition for background color changes */
+}
+
+/* Conteneur principal */
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 80px 20px 100px 20px;
+}
+
+
+/* =====================
+   HEADER & NAVBAR
+   ===================== */
+header {
+    position: sticky;
+    top: 0;
+    box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
+    z-index: 1000;
+    background-color: #FFF;
+}
+
+header .container {
+    margin: auto;
+    padding: 5px;
+}
+
+/* LOGO / MARQUE */
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.1px;
+    font-family: 'Lobster', cursive;
+    margin-right: 50px;
+}
+
+h1.navbar-brand a {
+    color: var(--primary-color) !important;
+    text-decoration: none;
+}
+
+/* MENU NAVBAR */
+.navbar-nav {
+    gap: 40px;
+}
+
+.navbar-nav a {
+    text-decoration: none;
+    color: var(--secondary-color);
+    font-weight: 500;  
+    font-size: larger;  
+}
+
+.navbar-nav a:hover {
+    color: var(--button-hover);
+}
+
+.navbar-nav .nav-item {
+    list-style: none;
+}
+
+.navbar-nav .nav-link {
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding: 10px;
+    transition: background-color 0.3s ease-in-out;
+    border-radius: 5px;
+}
+
+/* Effet au survol */
+.navbar-nav .nav-link:hover {
+    background-color: var(--button-hover);
+    color: var(--text-color);
+}
+
+.description {
+    display: block;
+    color: var(--primary-color);
+    text-align: center;
+    padding: 0px 10px;
+    font-size: 1.4rem;
+    font-family: Lobster, cursive;
+}
+
+/* MENU BURGER SUR MOBILE */
+.navbar-toggler {
+    border: none;
+    background-color: transparent;
+}
+
+.navbar-toggler-icon {
+    filter: invert(1);
+}
+
+/* =====================
+   CARTES D'ARTICLES
+   ===================== */
+.card {
+    border: none;
+    box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease-in-out;
+    background-color: white;
+    border-radius: 8px;
+}
+
+.banner {
+    background-image: url("//wp-content/themes/mon-theme/1645699910087.jpg");    
+    background-position:top center;
+    background-size: cover;
+    height: 180px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.profile img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    padding: 2px;
+    border: 1px solid #7a7aeb;
+    z-index: 1;
+}
+
+.card h2 {
+    font-size: 1.2rem;   
+    margin-bottom: 10px;
+    color: var(--secondary-color);
+}
+
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+/* =====================
+   BOUTONS PERSONNALISÉS
+   ===================== */
+
+
+.btn:hover {
+    background-color: var(--button-hover);
+    border:  var(--button-hover) ;
+    color: #FFF;
+}
+
+/* =====================
+   FOOTER
+   ===================== */
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    color: var(--secondary-color);
+    text-align: center;
+    padding: 15px;
+    font-size: 1rem;
+    background-color: var(--header-bg);    
+    box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
+    background-color: #FFF;
+    z-index: 1000;
+}
+
+/* =====================
+   RESPONSIVE DESIGN
+   ===================== */
+@media (max-width: 768px) {
+    .navbar-brand {
+        font-size: 1.4rem;
+    }
+
+    .navbar-nav .nav-link {
+        font-size: 1rem;
+        padding: 8px;
+    }
+
+    .card {
+        margin-bottom: 15px;
+    }
+}
