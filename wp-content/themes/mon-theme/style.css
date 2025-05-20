@@ -45,7 +45,7 @@ body {
     font-family: 'Arial', sans-serif;
     font-size: 0.9rem;
     background-color: var(--header-bg) !important ; /* Softer background color for harmony */
-    background-image: url(//wp-content/themes/mon-theme/ea29bb39-223f-4c49-9362-b7caf75313af.avif);
+    background-image: url(/static-portfolio/wp-content/themes/mon-theme/ea29bb39-223f-4c49-9362-b7caf75313af.avif);
     background-size: repeat-x !important;
     color: #333; /* Ensures text is readable on the softer background */
     margin: 0;
@@ -157,7 +157,7 @@ h1.navbar-brand a {
 }
 
 .banner {
-    background-image: url("//wp-content/themes/mon-theme/1645699910087.jpg");    
+    background-image: url("/static-portfolio/wp-content/themes/mon-theme/1645699910087.jpg");    
     background-position:top center;
     background-size: cover;
     height: 180px;
